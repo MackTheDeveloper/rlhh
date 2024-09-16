@@ -1,0 +1,258 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+
+/* Added by manish  */
+.widemenu > a { padding-top: 10px !important;padding-bottom: 10px !important;color:#000;}
+.widemenu { width: 100%;  }
+.main-sidebar { background-color:#e1e6e8 !important;  } 
+form .form-group { float: left; margin-right: 2%; width: 30%; height: 84px;}
+form .rowbtn {float: left;margin: 0;padding: 0;width: 100%;}
+form div.required label::after {color: red;content: " *";}
+#courses-payment_process > label,#teachingteam-status > label,#collaboration-status > label,#productcategories-status > label,#products-cost_type > label,#customers-flag_newsletter > label,#customers-status > label,#categories-status > label,#categories-type > label,#productcategories-type > label,#products-status > label,#users-type > label,#trainer-status > label,#courses-status > label  {  margin-right: 30px; }
+#courses-payment_process input,#teachingteam-status input,#collaboration-status input,#productcategories-status input,#products-cost_type input,#customers-flag_newsletter input,#customers-status input,#categories-status input,#categories-type input,#productcategories-type input,#products-status input,#users-type input,#trainer-status input,#courses-status input  {  margin-left: 5px; }
+.alert-success,.alert-info,.alert-danger { padding: 5px !important; margin: 10px 0 30px !important; box-shadow: 1px 1px 3px -2px hsl(0, 0%, 0%) }
+.alert-success-ajax,.alert-info-ajax,.alert-danger-ajax { padding: 5px !important; margin: 10px 0 30px !important; box-shadow: 1px 1px 3px -2px hsl(0, 0%, 0%) }
+.grid-view .glyphicon-eye-open {display: none;}
+.kv-align-center.kv-align-middle.skip-export.kv-merged-header { color: #659c67;}
+.kv-grid-container a {color: #659c67 !important;}
+.grid-view thead {background: #e8e8e8 none repeat scroll 0 0;}
+.summary {margin: 10px 0;}
+ul.sidemenu { width: 100%; }
+.field-categories-description { width: 100% !important; }
+.field-categories-description { height: auto !important; }
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td { vertical-align: middle !important; }
+.content-header>h1 { font-size: 20px !important; }
+.content-wrapper { background-color: #fff !important; }
+.field-productcategories-description { width: 100% !important; }
+.field-productcategories-description { height: auto !important; }
+.field-products-description { width: 100% !important; }
+.field-products-description { height: auto !important; }
+.field-products-image { width: 100% !important; } 
+#products-image { width: 52%; }
+.wholeimgpart {float: left;width: 100px;}
+.upload-images {float: left;width: 100%;margin-bottom: 20px;}
+.up-images { background: rgba(0, 0, 0, 0) url(../images/removeappliedcode1.png) no-repeat scroll 1px 1px; width: 20px; height: 20px;position: absolute; cursor: pointer;}
+.dispimage { margin: 9px; }
+.alert-success-modified { float: left; width: 90% !important; }
+.typesubmit button { margin-right: 5px; }
+#loading { width: 100%; height: 100%; top: 0px;left: 0px;position: fixed;display: block;opacity: 0.7; background-color: #fff; z-index: 1111; text-align: center;display: none;}
+#loading-image { position: absolute;top: 40%;z-index: 100;}
+.grid-view { cursor: pointer; }
+.field-courses-overview { height: auto !important; }
+.field-courses-highlight {height: auto !important; width: 62% !important; }
+.adddownloadablematerial {     margin-top: 25px;margin-left: 20px; }
+.addcoursepaymentinstallmentsfirst { margin-top: 6px; }
+.removecoursepaymentinstallmentsfirst { margin-top: 25px; }
+.adddownloadablematerialfirst { margin-left: 40px; }
+.addpaidmaterial {     margin-top: 25px;margin-left: 20px; }
+.addpaidmaterialfirst { margin-left: 40px; }
+.adddownloadablevideo {     margin-top: 25px;margin-left: 20px; }
+.adddownloadablevideofirst { margin-left: 40px; }
+.addpaidvideo {     margin-top: 25px;margin-left: 20px; }
+.addpaidvideofirst { margin-left: 40px; }
+.divdonwloadbalematerial {}
+.divpaidmaterial {}
+.divdownloadablevideos {}
+.divpaidvideos {}
+.maindivcontainer { float: left; width: 50%; }
+.maindivcontainer input[type="file"] { width: 100% ; margin-top: 5px}
+.productmaterialselectionsection { width: 100%; float:left; } 
+.select2-selection { line-height: 28px !important;; }
+.select2-selection--single .select2-selection__clear { line-height:1.5 !important;  }
+.actioningridbutton { border: none; background: none; color: #659c67 !important; padding: 3px 20px; }
+.modal-header { background-color: #e9e9e9; box-shadow: 2px 7px 13px #9e9e9e; font-weight: bold;}
+.modal-header:hover { box-shadow: 2px 7px 13px #3b713b;}
+.labeldata {     float: left; width: 30%; background: #f5f5f5; padding: 5px; margin-bottom: 2px; clear:both;}
+.resultdata {     float: left;width: 68%;margin-bottom: 2px;padding: 5px; }
+.modal-dialog { display: flex; }
+.modal-content { padding-bottom: 30px; width: 100%; }
+.detail-container { float: left; width:100%; }
+.detail-container h4 { margin-bottom: 10px !important; }
+.dpauto { padding: 3px 33px 3px 3px !important;width: auto !important;}
+ .kv-grid-table #coursessearch-course_date { width: 100px !important; }
+ .kv-grid-table #customerssearch-created_at { width: 100px !important; }
+ .kv-grid-table #trainersearch-created_at { width: 100px !important; }
+ .kv-grid-table #courseschedulesearch-from_date { width: 100px !important; }
+ .kv-grid-table #courseschedulesearch-to_date { width: 100px !important; }
+ .div_filter_outside { float: left; width: 100%; }
+ #filteroutside .field-trainer-acedemic_roles { height:auto !important; }
+ #filteroutside .field-trainer-acedemic_roles  label { width: 100%; }
+ .grid-view .panel-default { box-shadow: 10px 10px 10px #dedede;}
+#partial-container {float: left; width: 100%;}
+.panel-heading { background-color: #e8e8e8 !important;padding: 4px 15px !important;color: #bbbbbb !important;}
+.panel-heading .pull-right .summary { margin: 0px !important;}
+.div_filter_outside_customers form .form-group { width: 23% !important; }
+.bootstrap-dialog .modal-header { border-radius: 0px !important; }
+.kv-grid-toolbar .dropdown-toggle { background-color: #00a65a !important; color: #fff !important; border-color : #d4d4d4;}
+.ui-button-text-only { padding: 2px !important;}
+.field-courseschedule-days { width: 60% !important; }
+#courseschedule-days { margin-top: 15px; }
+#courseschedule-days label:after { content:none !important; }
+#courseschedule-days label { margin-right: 10px }
+#courseschedule-days label input[type="checkbox"] { margin: 4px 2px; }
+.chkall {     float: left; margin-top: 0px; margin-left: -610px; }
+.chkall input {    margin-right: 5px; height: 25px; width: 25px; margin-top: 0px;}
+.chkall span {  float: right; color: #008d4c; margin-top: 2px; }
+.course-schedule-form form .form-group { width: 45%; }
+.content-header .forinnersubcat .breadcrumb { float: left; background: transparent;margin-top: 0; margin-bottom: 0;font-size: 12px;padding: 7px 5px;position: absolute; top: 13px; left: 222px;border-radius: 2px}
+.searchgeneric {     width: 20%; margin-bottom: 20px; float: right;margin-right: 5px; }
+.field-assigncourses-course_category_id { height: auto !important; }
+.field-courses-productsdownloadablematerials { height: auto !important; }
+.field-courses-productspaidmaterials { height: auto !important; }
+.select2-search__field { width: 100% !important; }
+.courses-form .field-courses-overview{ clear:both; }
+.categories-index #w0-deletetask { float: left; width: 100%; }
+.courseDetailsinscheduling .form-group { width: 30% !important; }
+.courseDetailsinscheduling .field-courses-highlight { width: 62% !important; }
+.custcoloringirdheader  { color:#659c67; }
+.kv-align-center.kv-align-middle.skip-export{ color:#659c67; }
+.kv-grid-table .dropdown a { margin-right: 5px; }
+.kv-grid-table .dropdown { text-align: center; }
+.pagination { float: right;}   
+.pagination > .active > a { background-color: #00a65a !important;}
+.field-collaboration-description { height: auto !important; width:100% !important; }
+.field-teachingteam-description { height: auto !important; width:100% !important; }
+.field-courseschedule-important_notes_for_student { height: auto !important; clear:both; }
+.kv-grid-container a img { border-radius: 5px; }
+.addpaymentmaincontainerupdate .col-md-12 { height: 60px !important; }
+.addpaymentmaincontainer .col-md-12 { height: 60px !important; }
+.field-courses-status { clear: both; }
+label[for='coursepaymentinstallments-period'] {display: none !important;  }
+label[for='coursepaymentinstallments-amount'] {display: none !important;  }
+label[for='coursepaymentinstallments-reminder'] {display: none !important;  }
+.field-courseschedule-downloadable_materials_student {height: auto !important; }
+.field-courses-payment_process {width: 15% !important; }
+.addpaymentmaincontainer .form-group { width: 28% !important; }
+
+/* Custome select2 CSS */
+.customselect2 .select2-container--default { width: 100% !important; }
+.customselect2 span.select2-selection--single { border-radius: 4px; }
+.customselect2 span.select2-selection__rendered { color:#555; }
+.customselect2 span.select2-selection__placeholder { color:#999; }
+.customselect2 span.select2-selection__arrow {   border: none; border-left: 1px solid #aaa; border-top-right-radius: 4px; border-bottom-right-radius: 4px; position: absolute; top: 1px; right: 1px; width: 20px; height: 32px !important;}
+.customselect2 span.select2-selection__arrow b {border-color: #888 transparent transparent transparent; border-style: solid;border-width: 5px 4px 0 4px;height: 0;left: 50%;margin-left: -4px;margin-top: -2px;position: absolute;top: 50%; width: 0;}
+.select2-results__options {max-height: 200px;overflow-y: auto;}
+.customselect2 span.select2-selection__clear {   float: right;color: #000;cursor: pointer;font-size: 18px;font-weight: 700;line-height: 1.3;opacity: 0.4;filter: alpha(opacity=40);position: absolute;right: 0;margin-right: 15px; }
+.select2-container--default .select2-results__option[aria-selected=true] { background-color: #337ab7 !important; }
+.select2-container--default .select2-results__option[aria-selected=true], .select2-container--default .select2-results__option[aria-selected=true]:hover { color:#fff !important; }
+.select2-dropdown .select2-search__field, .select2-search--inline .select2-search__field { webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); background: #fff url(../images/search.png) right 10px top 7px no-repeat; border: 1px solid #ccc; border-radius: 4px; color: #555555; }
+/* End -- Custome select2 CSS */
